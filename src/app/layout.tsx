@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <ClerkProvider
-       afterSignOutUrl="/"
+       afterSignOutUrl="/sign-in"
         appearance={{
           layout: {
             socialButtonsVariant: "iconButton",
