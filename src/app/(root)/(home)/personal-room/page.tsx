@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-non-null-asserted-optional-chain */
+
 'use client'
 import { Button } from '@/components/ui/button'
 import { useGetCallById } from '@/hooks/useGetCallById'
