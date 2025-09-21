@@ -14,7 +14,7 @@ const Table = ({ title, description }: { title: string, description: string }) =
   </div>
 }
 
-const page = () => {
+const Page = () => {
   const router = useRouter()
   const { user } = useUser()
   const client = useStreamVideoClient()
@@ -72,4 +72,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
