@@ -24,12 +24,6 @@ const Navbar = () => {
           <UserButton />
         </SignedIn>
 
-        <SignedOut>
-          <Link href="/sign-in" className="text-white">
-            Sign In
-          </Link>
-        </SignedOut>
-
         <MobileNav />
       </div>
 
