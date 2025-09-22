@@ -25,11 +25,14 @@ const Navbar = () => {
         </SignedIn>
 
         <SignedOut>
-          <SignIn />
+          <Link href="/sign-in" className="text-white">
+            Sign In
+          </Link>
         </SignedOut>
 
         <MobileNav />
       </div>
+
     </nav>
   )
 }
