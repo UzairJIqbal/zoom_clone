@@ -53,21 +53,21 @@ const CallLists = ({ type }: {
 
     useEffect(() => {
         const fetchRecordings = async () => {
-           try {
-             const callData = await Promise.all(
-                Callrecordings?.map((call) => call.queryRecordings()) ?? []
-            )
-            const recordings = callData
-                .filter((call) => call.recordings.length > 0)
-                .flatMap((call) => call.recordings);
+            try {
+                const callData = await Promise.all(
+                    Callrecordings?.map((call) => call.queryRecordings()) ?? []
+                )
+                const recordings = callData
+                    .filter((call) => call.recordings.length > 0)
+                    .flatMap((call) => call.recordings);
 
                 setRecordings(recordings)
-           } catch (error) {
-            toast("Try again later")
-           }
+            } catch (error) {
+                toast("Try again later")
+            }
         }
         if (type === 'recordings') fetchRecordings()
-       
+
     }, [type, Callrecordings])
 
 

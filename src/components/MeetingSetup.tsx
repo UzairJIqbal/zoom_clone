@@ -7,9 +7,6 @@ const MeetingSetup = ({ setIsSetupComplete }: { setIsSetupComplete: (value: bool
   const [isMicCamtoggleOn, setIsMicCamToggleOn] = useState(false)
   const call = useCall()
 
-  
-
-
   if (!call) {
     throw new Error("useCall must be used within StreamCall component")
   }

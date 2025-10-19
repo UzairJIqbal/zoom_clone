@@ -5,7 +5,6 @@ import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
-  DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
@@ -24,8 +23,8 @@ const MeetingRoom = () => {
   const [showParticipants, setShowParticipants] = useState(false)
   const { useCallCallingState } = useCallStateHooks();
   const callingState = useCallCallingState();
-  
-  if (callingState !== CallingState.JOINED)  return <Loader/>
+
+  if (callingState !== CallingState.JOINED) return <Loader />
 
   const CallLayout = () => {
     switch (layout) {
